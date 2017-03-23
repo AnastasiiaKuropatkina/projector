@@ -1,29 +1,26 @@
 .product
-	flex-flow: row wrap;
-	display: -webkit-flex;
-	display: -webkit-box;
-	display: flex;
-	flex-wrap: wrap;
-	-webkit-box-orient: horizontal;
-	-webkit-box-flex: 1;
-	-webkit-flex: 1 1 100%;
-	flex: 1 1 100%;
-	justify-content: center;
-	box-sizing: border-box;
+	.container
+		flex-flow: row wrap;
+		display: -webkit-flex;
+		display: -webkit-box;
+		display: flex;
+		flex-wrap: wrap;
+		flex: 1 1 100%;
+		justify-content: space-around;
+		box-sizing: border-box;
 
 	&__product-wrap
 		background-color: #ffffff;
-		border: 1px solid transparent;
+		border: 1px solid #d9dde6;
 		border-radius: 5px;
 		box-shadow: 0 3px 3px 0 rgba(0,0,0,0.05);
 		display: block;
 		font-size: 1rem;
-		margin: 1%
 		margin-bottom: 2rem;
-		padding: 4rem 1rem 1rem;
+		padding: 3.25rem 1rem 1.5rem;
 		position: relative;
 		text-align: center;
-		min-height: 21rem;
+		min-height: 17rem;
 		text-decoration: none
 
 		align-items: stretch;
@@ -36,11 +33,11 @@
 	&__img
 		display inline-block
 		text-decoration: none
-		height auto
+		height 100px
 		width auto
 
 	&__title
-		padding 1.5em .2rem 0
+		padding 2.75rem .1rem 0
 		display: block
 		text-decoration: none !important
 		font-size 1.25rem
