@@ -1,0 +1,17 @@
+include ../blocks/_all
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        block title
+            title Title Name
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    body
+        block header
+        block content
+
+        link(rel="stylesheet" media="all" href="css/all.css")
+        block scripts
+        script(src="js/custom.min.js")

@@ -1,0 +1,76 @@
+body
+	background-color #ebeef6
+	color #383e49;
+	font 62.5% arial, tahoma
+	font-family Tahoma, sans-serif
+
+overflox-x hidden
+
+*
+	box-sizing border-box
+
+.container-full, .container
+	box-sizing border-box
+
+.container-full
+	display inline-block
+	overflow hidden
+	position relative
+	vertical-align top
+	width 100%
+
+.container
+	margin 0 auto
+	position relative
+	@media lg
+		max-width 1200px;
+	&:after, &:before
+		clear both
+		content ""
+		display table
+		line-height 0
+		width 100%
+
+.clearfix:after, .clearfix:before
+	visibility hidden
+	display block
+	font-size 0
+	content " "
+	clear both
+	height 0
+
+img
+	max-width 100%
+
+.o-h
+	overflow hidden
+
+.uppercase
+	text-transform uppercase
+
+[class*="sec"], [class*="grid"]
+	box-sizing border-box
+	display inline-block
+	float left
+	position relative
+	vertical-align top
+
+.sec4
+	width 100%
+	@media md
+		width 48%
+	@media lg
+		width 23%
+
+.container-title
+	text-align center
+	color: #474d58
+	display block
+	margin auto
+	margin-top 2rem
+	margin-bottom 2rem
+	font-size 2em
+	font-weight bold
+	@media lg
+		font-size 3em
+

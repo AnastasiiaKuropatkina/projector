@@ -1,0 +1,25 @@
+.header
+  background-color #383e49
+  height auto
+  text-align center
+  &__link
+    color: #ffffff
+    display inline-block
+    font-size 2em
+    font-weight bold
+    margin auto
+    margin-top 1rem
+    margin-bottom 1rem
+    text-decoration none
+    &:before
+      background: url(../img/header-icon.svg) no-repeat;
+      background-size: 40px 36px;
+      background-position: 0 0;
+      height: 40px;
+      width: 36px;
+      content: '';
+      display: inline-block;
+      margin-right: .5rem;
+      vertical-align: middle;
+    @media lg
+      font-size 3em
