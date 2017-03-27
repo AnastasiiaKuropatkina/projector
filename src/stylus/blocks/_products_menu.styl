@@ -1,46 +1,49 @@
 .product
 	.container
-		flex-flow: row wrap;
-		display: -webkit-flex;
-		display: -webkit-box;
-		display: flex;
-		flex-wrap: wrap;
-		flex: 1 1 100%;
-		justify-content: space-around;
-		box-sizing: border-box;
+		display: -webkit-flex
+		display: -webkit-box
+		display: flex
+		flex-flow: row wrap
+		flex: 1 1 100%
+		justify-content: space-around
+		box-sizing: border-box
 
 	&__product-wrap
 		background-color: #ffffff;
-		border: 1px solid #d9dde6;
-		border-radius: 5px;
-		box-shadow: 0 3px 3px 0 rgba(0,0,0,0.05);
-		display: block;
-		font-size: 1rem;
-		margin-bottom: 2rem;
-		padding: 3.25rem 1rem 1.5rem;
-		position: relative;
-		text-align: center;
-		min-height: 17rem;
+		border: 1px solid #d9dde6
+		border-radius: 5px
+		display: block
+		font-size: 1rem
+		margin-bottom: 2rem
+		padding: 3.25rem 1rem 1.5rem
+		position: relative
+		text-align: center
+		min-height: 17rem
 		text-decoration: none
+		align-items: stretch
+		flex-basis: 27.5rem
+		flex: auto
+		flex-grow: 0
+		box-sizing: border-box
 
-		align-items: stretch;
-		flex-basis: 27.5rem;
-		-webkit-box-flex: initial;
-		flex: auto;
-		flex-grow: 0;
-		box-sizing: border-box;
+		&:hover
+			box-shadow: 0 3px 3px 0 rgba(0,0,0,.15)
 
 	&__img
+		background-color transparent
+		border-radius 0
 		display inline-block
-		text-decoration: none
+		text-decoration none
 		height 100px
-		width auto
+		width auto;
 
 	&__title
-		padding 2.75rem .1rem 0
-		display: block
-		text-decoration: none !important
+		background-color transparent
+		border none
+		border-radius 0
+		color #383e49
+		display block
 		font-size 1.25rem
 		font-weight 400;
-		color: #383e49
-
+		margin 2.75rem .1rem 0
+		text-decoration none !important

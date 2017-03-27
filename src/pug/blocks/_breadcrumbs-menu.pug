@@ -1,0 +1,7 @@
+mixin b_breadcrumbs-menu()
+    +b.breadcrumbs.container-full
+        .container
+            +b('ul').breadcrumbs-menu
+                each item in menu
+                    +e('li').item
+                        +e.A(href=item.link).link #{item.name}

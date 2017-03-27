@@ -1,0 +1,20 @@
+mixin b_documents()
+    .container-full
+        .container
+            .sec3
+                +b.A.back-buttom(href="/index-2.html") Назад
+            .sec3
+                +b.H1.container-title Перевірте наявність документів
+            .sec3
+                +b.DIV.steps крок <strong>3</strong> із 3
+
+    +b.documents.container-full
+        .container
+            +e.menu
+                each document in documents
+                    +e('li').item
+                        +e.A(href=document.link).link #{document.name}
+
+    +b.submit.container-full
+        .container
+            +b.A.submit-btn(href="#") Записатись

@@ -7,7 +7,7 @@ let gulp = require('gulp'),
 
 const JS_PAGES_DIR = ([
                 `${config.src.js}lib/jquery.min.js`,
-                `${config.src.js}lib/owl.carousel.min.js`,
+                `${config.src.js}lib/imagesloaded.pkgd.min.js`,
                 `${config.src.js}custom.js`,
                 `${config.src.js}*.js`]);
 

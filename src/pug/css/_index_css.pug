@@ -1,0 +1,111 @@
+style(media='screen', type='text/css').
+    body {
+        background-color: #ebeef6;
+        color: #383e49;
+        font-size: 62.5%;
+        font-family: arial,tahoma,sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    *, .container, .container-full, .overflox-x, .hidden {
+        box-sizing: border-box;
+    }
+    .container-full {
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        vertical-align: top;
+        width: 100%;
+    }
+    .container {
+        margin: 0 auto;
+        position: relative;
+    }
+    .container:after, .container:before {
+        clear: both;
+        content: "";
+        display: table;
+        line-height: 0;
+        width: 100%;
+    }
+    .sec4 {
+        width: 100%;
+    }
+    .header {
+        background-color: #383e49;
+        height: 8em;
+    }
+    .header__link {
+        visibility: hidden;
+    }
+    .container-title {
+        background-color: #b0b4bd;
+        border: none;
+        border-radius: 25px;
+        text-align: center;
+        color: #b0b4bd;
+        display: block;
+        margin: auto;
+        margin-top: 1.75rem;
+        margin-bottom: 2.25rem;
+        font-size: 2em;
+        font-weight: 700;
+        max-width: 30rem;
+    }
+    .product .container {
+        display: -webkit-box;
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 1 100%;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+    .product__product-wrap {
+        background-color: #fff;
+        border: 1px solid #d9dde6;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 2rem;
+        min-height: 17rem;
+        flex-basis: 27.5rem;
+        flex: auto;
+        flex-grow: 0;
+        padding: 3.25rem 1rem 1.5rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    .product__img {
+        background-color: #f4f4f4;
+        border: none;
+        border-radius: 5px;
+        display: inline-block;
+        text-decoration: none;
+        height: 100px;
+        width: 100px;
+    }
+    .product__title {
+        background-color: #ebeef6;
+        border: none;
+        border-radius: 25px;
+        color: #ebeef6;
+        display: block;
+        font-size: 1.25rem;
+        margin: 2.75rem .1rem 0;
+    }
+
+    @media (min-width: 768px){
+        .sec4 {
+            width: 48%;
+        }
+    }
+    @media (min-width: 992px) {
+        .container {
+            max-width: 1200px;
+        }
+        .container-title {
+            font-size: 2.8em;
+        }
+        .sec4 {
+            width: 23%;
+        }
+    }
