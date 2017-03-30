@@ -1,16 +1,14 @@
 mixin b_services()
     .container-full
         .container
-            .sec3
-                +b.A.back-buttom(href="/index-2.html") Назад
-            .sec3
-                +b.H1.container-title Виберіть послугу
-            .sec3
-                +b.DIV.steps крок <strong>2</strong> із 3
+            +b.DIV.back-buttom
+                +e.A.link(href="/index.html") Назад
+            +b.DIV.steps крок <strong>2</strong> із 3
+            +b.H1.container-title Виберіть послугу
 
     +b.services.container-full
         .container
             +e('ul').menu
                 each service in services_menu
-                    +e('li').item
+                    +e('li').item.sec2
                         +e.A(href=service.link).link #{service.name}

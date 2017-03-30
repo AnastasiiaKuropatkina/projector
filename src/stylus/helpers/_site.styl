@@ -42,6 +42,9 @@ overflox-x hidden
 img
 	max-width 100%
 
+strong
+	font-weight bold
+
 .o-h
 	overflow hidden
 
@@ -54,6 +57,16 @@ img
 	float left
 	position relative
 	vertical-align top
+
+.sec2
+	width 100%
+	@media md
+		width 50%
+
+.sec3
+	width 100%
+	@media md
+		width 33%
 
 .sec4
 	width 100%
@@ -68,12 +81,12 @@ img
 	text-align center
 	color: #474d58
 	display block
-	margin auto
-	margin-top: 1.75rem
-	margin-bottom: 2.25rem
 	font-size 2em
 	font-weight bold
-	max-width 100%
+	margin: 1.75rem 0 2.25rem;
 	@media lg
 		font-size 2.8em
+	@media md
+		margin-right 9rem
+		margin-left 9rem
 

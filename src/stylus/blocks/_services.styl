@@ -12,19 +12,16 @@
     background-color: #ffffff;
     border: 1px solid #ebeef6
     border-radius: 0
-    display: block
+    display inline-flex
     align-items: stretch
     flex-basis: 27.5rem
     flex: auto
     flex-grow: 0
     box-sizing: border-box
-    width 50%
 
   &__link
-    font-size: 1.25rem
-    min-height: 7rem
-    text-decoration: none
-    padding: 1.5rem 3rem 1.5rem
+    font-size 1.25rem
+    text-decoration none
     background-color transparent
     border none
     border-radius 0
@@ -32,3 +29,11 @@
     display block
     text-align left
     line-height 150%
+    align-items center
+    display inline-flex
+    width 100%
+    padding 1rem
+    min-height auto
+    @media md
+      padding .25rem 1rem
+      min-height 7rem

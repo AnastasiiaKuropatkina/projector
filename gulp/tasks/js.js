@@ -8,7 +8,11 @@ let gulp = require('gulp'),
 const JS_PAGES_DIR = ([
                 `${config.src.js}lib/jquery.min.js`,
                 `${config.src.js}lib/imagesloaded.pkgd.min.js`,
+                `${config.src.js}lib/TweenMax.min.js`,
+                `${config.src.js}lib/barba.min.js`,
+                `${config.src.js}lib/animations.js`,
                 `${config.src.js}custom.js`,
+                `${config.src.js}barba.js`,
                 `${config.src.js}*.js`]);
 
 const JS_DIR = `${config.src.js}/**/*.js`;
